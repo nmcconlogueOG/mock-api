@@ -1,0 +1,214 @@
+{
+  "mockRestApis": [
+    {
+      "basePath": "/api/product",
+      "methods": [
+        {
+          "path": "/{id}",
+          "httpMethod": "GET",
+          "returnId": "singleProduct",
+          "statusCode": 200
+        },
+        {
+          "path": "",
+          "httpMethod": "GET",
+          "returnId": "productList",
+          "statusCode": 200
+        },
+        {
+          "path": "",
+          "httpMethod": "POST",
+          "returnId": "createdProduct",
+          "statusCode": 201
+        },
+        {
+          "path": "/{id}",
+          "httpMethod": "PUT",
+          "returnId": "updatedProduct",
+          "statusCode": 200
+        },
+        {
+          "path": "/{id}",
+          "httpMethod": "DELETE",
+          "returnId": "deleteResponse",
+          "statusCode": 204
+        },
+        {
+          "path": "/category/{categoryId}",
+          "httpMethod": "GET",
+          "returnId": "productsByCategory",
+          "statusCode": 200
+        },
+        {
+          "path": "",
+          "httpMethod": "GET",
+          "returnId": "inStockProducts",
+          "statusCode": 200,
+          "queryParameters": {
+            "inStock": "true"
+          }
+        }
+      ]
+    }
+  ],
+  "mockObjects": [
+    {
+      "id": "singleProduct",
+      "class": "java.util.Map",
+      "version": "2.0",
+      "keyClass": "java.lang.String",
+      "valueClass": "java.lang.Object",
+      "objectValue": {
+        "id": "101",
+        "name": "Laptop",
+        "description": "High-performance laptop",
+        "price": 1299.99,
+        "category": "Electronics",
+        "inStock": true
+      }
+    },
+    {
+      "id": "productList",
+      "class": "java.util.List",
+      "genericClass": "java.util.Map",
+      "objectValue": [
+        {
+          "id": 101,
+          "name": "Laptop",
+          "description": "High-performance laptop",
+          "price": 1299.99,
+          "category": "Electronics",
+          "inStock": true
+        },
+        {
+          "id": 102,
+          "name": "Wireless Mouse",
+          "description": "Ergonomic wireless mouse",
+          "price": 29.99,
+          "category": "Accessories",
+          "inStock": true
+        },
+        {
+          "id": 103,
+          "name": "USB-C Cable",
+          "description": "2-meter USB-C cable",
+          "price": 12.99,
+          "category": "Accessories",
+          "inStock": false
+        },
+        {
+          "id": 104,
+          "name": "Mechanical Keyboard",
+          "description": "RGB mechanical keyboard",
+          "price": 149.99,
+          "category": "Accessories",
+          "inStock": true
+        }
+      ]
+    },
+    {
+      "id": "createdProduct",
+      "class": "java.util.Map",
+      "version": "2.0",
+      "keyClass": "java.lang.String",
+      "valueClass": "java.lang.Object",
+      "objectValue": {
+        "id": "105",
+        "name": "New Product",
+        "description": "A newly created product",
+        "price": 99.99,
+        "category": "General",
+        "inStock": true,
+        "message": "Product created successfully"
+      }
+    },
+    {
+      "id": "updatedProduct",
+      "class": "java.util.Map",
+      "version": "2.0",
+      "keyClass": "java.lang.String",
+      "valueClass": "java.lang.Object",
+      "objectValue": {
+        "id": "101",
+        "name": "Updated Laptop",
+        "description": "Updated high-performance laptop",
+        "price": 1199.99,
+        "category": "Electronics",
+        "inStock": true,
+        "message": "Product updated successfully"
+      }
+    },
+    {
+      "id": "productsByCategory",
+      "class": "java.util.List",
+      "genericClass": "java.util.Map",
+      "objectValue": [
+        {
+          "id": 102,
+          "name": "Wireless Mouse",
+          "description": "Ergonomic wireless mouse",
+          "price": 29.99,
+          "category": "Accessories",
+          "inStock": true
+        },
+        {
+          "id": 103,
+          "name": "USB-C Cable",
+          "description": "2-meter USB-C cable",
+          "price": 12.99,
+          "category": "Accessories",
+          "inStock": false
+        },
+        {
+          "id": 104,
+          "name": "Mechanical Keyboard",
+          "description": "RGB mechanical keyboard",
+          "price": 149.99,
+          "category": "Accessories",
+          "inStock": true
+        }
+      ]
+    },
+    {
+      "id": "inStockProducts",
+      "class": "java.util.List",
+      "genericClass": "java.util.Map",
+      "objectValue": [
+        {
+          "id": 101,
+          "name": "Laptop",
+          "description": "High-performance laptop",
+          "price": 1299.99,
+          "category": "Electronics",
+          "inStock": true
+        },
+        {
+          "id": 102,
+          "name": "Wireless Mouse",
+          "description": "Ergonomic wireless mouse",
+          "price": 29.99,
+          "category": "Accessories",
+          "inStock": true
+        },
+        {
+          "id": 104,
+          "name": "Mechanical Keyboard",
+          "description": "RGB mechanical keyboard",
+          "price": 149.99,
+          "category": "Accessories",
+          "inStock": true
+        }
+      ]
+    },
+    {
+      "id": "deleteResponse",
+      "class": "java.util.Map",
+      "version": "2.0",
+      "keyClass": "java.lang.String",
+      "valueClass": "java.lang.Object",
+      "objectValue": {
+        "message": "Product deleted successfully"
+      }
+    }
+  ]
+}

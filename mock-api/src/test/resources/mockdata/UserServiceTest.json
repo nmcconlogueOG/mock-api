@@ -1,0 +1,49 @@
+{
+  "mockRestApis": [
+    {
+      "basePath": "/api",
+      "methods": [
+        {
+          "path": "/users/{id}",
+          "httpMethod": "GET",
+          "returnId": "mockUser",
+          "statusCode": 200
+        },
+        {
+          "path": "/users",
+          "httpMethod": "GET",
+          "returnId": "mockUserList",
+          "statusCode": 200
+        }
+      ]
+    }
+  ],
+  "mockObjects": [
+    {
+      "id": "mockUser",
+      "class": "net.mcfarb.mockapi.model.User",
+      "objectValue": {
+        "id": 1,
+        "name": "Mock User",
+        "email": "mock@example.com"
+      }
+    },
+    {
+      "id": "mockUserList",
+      "class": "java.util.List",
+      "genericClass": "net.mcfarb.mockapi.model.User",
+      "objectValue": [
+        {
+          "id": 1,
+          "name": "Alice Mock",
+          "email": "alice.mock@example.com"
+        },
+        {
+          "id": 2,
+          "name": "Bob Mock",
+          "email": "bob.mock@example.com"
+        }
+      ]
+    }
+  ]
+}

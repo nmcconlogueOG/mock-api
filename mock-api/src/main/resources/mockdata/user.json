@@ -1,0 +1,147 @@
+{
+  "mockRestApis": [
+    {
+      "basePath": "/api/user",
+      "methods": [
+        {
+          "path": "/{id}",
+          "httpMethod": "GET",
+          "returnId": "singleUser",
+          "statusCode": 200
+        },
+        {
+          "path": "",
+          "httpMethod": "GET",
+          "returnId": "userList",
+          "statusCode": 200
+        },
+        {
+          "path": "",
+          "httpMethod": "POST",
+          "returnId": "createdUser",
+          "statusCode": 201
+        },
+        {
+          "path": "/{id}",
+          "httpMethod": "PUT",
+          "returnId": "updatedUser",
+          "statusCode": 200
+        },
+        {
+          "path": "/{id}",
+          "httpMethod": "DELETE",
+          "returnId": "deleteResponse",
+          "statusCode": 204
+        },
+        {
+          "path": "",
+          "httpMethod": "GET",
+          "returnId": "activeUserList",
+          "statusCode": 200,
+          "queryParameters": {
+            "status": "active"
+          }
+        }
+      ]
+    }
+  ],
+  "mockObjects": [
+    {
+      "id": "singleUser",
+      "class": "java.util.Map",
+      "version": "2.0",
+      "keyClass": "java.lang.String",
+      "valueClass": "java.lang.Object",
+      "objectValue": {
+        "id": "1",
+        "name": "John Doe",
+        "email": "john@example.com",
+        "role": "admin"
+      }
+    },
+    {
+      "id": "userList",
+      "class": "java.util.List",
+      "genericClass": "java.util.Map",
+      "objectValue": [
+        {
+          "id": 1,
+          "name": "Alice Johnson",
+          "email": "alice@example.com",
+          "role": "user"
+        },
+        {
+          "id": 2,
+          "name": "Bob Smith",
+          "email": "bob@example.com",
+          "role": "user"
+        },
+        {
+          "id": 3,
+          "name": "Charlie Brown",
+          "email": "charlie@example.com",
+          "role": "admin"
+        }
+      ]
+    },
+    {
+      "id": "createdUser",
+      "class": "java.util.Map",
+      "version": "2.0",
+      "keyClass": "java.lang.String",
+      "valueClass": "java.lang.Object",
+      "objectValue": {
+        "id": "4",
+        "name": "New User",
+        "email": "newuser@example.com",
+        "role": "user",
+        "message": "User created successfully"
+      }
+    },
+    {
+      "id": "updatedUser",
+      "class": "java.util.Map",
+      "version": "2.0",
+      "keyClass": "java.lang.String",
+      "valueClass": "java.lang.Object",
+      "objectValue": {
+        "id": "1",
+        "name": "Updated User",
+        "email": "updated@example.com",
+        "role": "user",
+        "message": "User updated successfully"
+      }
+    },
+    {
+      "id": "activeUserList",
+      "class": "java.util.List",
+      "genericClass": "java.util.Map",
+      "objectValue": [
+        {
+          "id": 1,
+          "name": "Alice Johnson",
+          "email": "alice@example.com",
+          "role": "user",
+          "status": "active"
+        },
+        {
+          "id": 3,
+          "name": "Charlie Brown",
+          "email": "charlie@example.com",
+          "role": "admin",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "deleteResponse",
+      "class": "java.util.Map",
+      "version": "2.0",
+      "keyClass": "java.lang.String",
+      "valueClass": "java.lang.Object",
+      "objectValue": {
+        "message": "User deleted successfully"
+      }
+    }
+  ]
+}
