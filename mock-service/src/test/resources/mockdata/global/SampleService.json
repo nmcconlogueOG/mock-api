@@ -1,0 +1,21 @@
+{
+    "mockServices": [
+        {
+            "serviceClass": "net.mcfarb.testing.ddmock.sample.SampleService",
+            "methods": [
+                {
+                    "methodName": "getSomeOtherDataNoArgs",
+                    "returnId": "testObject",
+                    "methodArguments": []
+                }
+            ]
+        }
+    ],
+    "mockObjects": [
+        {
+            "id": "testObject",
+            "class": "java.lang.String",
+            "stringValue": "This is the test string from the global sample service"
+        }
+    ]
+}

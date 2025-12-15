@@ -1,0 +1,67 @@
+{
+  "mockObjects": [
+    {
+      "id": "sampleData0",
+      "class": "net.mcfarb.testing.ddmock.sample.SampleData",
+      "objectValue": {
+        "data1": "Mock Data",
+        "data2": 55,
+        "data3": "07/27/2020, 05:03:17"
+      }
+    },
+    {
+      "id": "string1",
+      "class": "java.lang.String",
+      "stringValue": "This is from the mock",
+      "objectValue": null
+    },
+    {
+      "id": "listObject1",
+      "class": "java.util.List",
+      "genericClass": "java.lang.Long",
+      "objectValue": [1, 2, 3, 5, 8, 13, 1, 2, 3, 5, 8, 13]
+    },
+    {
+      "id": "objectRefInOtherFile",
+      "class": "java.util.List",
+      "genericClass": "net.mcfarb.testing.ddmock.sample.SampleData",
+      "objectValue": [
+        {
+          "data1": "data0",
+          "data2": 0,
+          "data3": null
+        },
+        {
+          "data1": "data1",
+          "data2": 1,
+          "data3": null
+        },
+        {
+          "data1": "data2",
+          "data2": 2,
+          "data3": null
+        },
+        {
+          "data1": "data3",
+          "data2": 3,
+          "data3": null
+        },
+        {
+          "data1": "data4",
+          "data2": 4,
+          "data3": null
+        },
+        {
+          "data1": "data5",
+          "data2": 5,
+          "data3": null
+        },
+        {
+          "data1": "data6",
+          "data2": 6,
+          "data3": null
+        }
+      ]
+    }
+  ]
+}

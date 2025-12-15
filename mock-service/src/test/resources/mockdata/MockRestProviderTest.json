@@ -1,0 +1,67 @@
+{
+	"mockRestApis": [
+		{
+			"basePath": "/api/v1",
+			"methods": [
+				{
+					"path": "/users/{userId}",
+					"httpMethod": "GET",
+					"returnId": "user1",
+					"statusCode": 200
+				},
+				{
+					"path": "/users",
+					"httpMethod": "GET",
+					"returnId": "userList",
+					"statusCode": 200,
+					"queryParameters": {
+						"active": "true"
+					}
+				},
+				{
+					"path": "/products/*",
+					"httpMethod": "GET",
+					"returnId": "product1",
+					"statusCode": 200
+				}
+			]
+		}
+	],
+	"mockObjects": [
+		{
+			"id": "user1",
+			"class": "net.mcfarb.testing.ddmock.sample.SampleData",
+			"objectValue": {
+				"data1": "John Doe",
+				"data2": 123,
+				"data3": null
+			}
+		},
+		{
+			"id": "userList",
+			"class": "java.util.List",
+			"genericClass": "net.mcfarb.testing.ddmock.sample.SampleData",
+			"objectValue": [
+				{
+					"data1": "User 1",
+					"data2": 1,
+					"data3": null
+				},
+				{
+					"data1": "User 2",
+					"data2": 2,
+					"data3": null
+				}
+			]
+		},
+		{
+			"id": "product1",
+			"class": "net.mcfarb.testing.ddmock.sample.SampleData",
+			"objectValue": {
+				"data1": "Product ABC",
+				"data2": 999,
+				"data3": null
+			}
+		}
+	]
+}

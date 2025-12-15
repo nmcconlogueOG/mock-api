@@ -1,0 +1,49 @@
+{
+    "mockServices": [
+        {
+            "serviceClass": "net.mcfarb.testing.ddmock.sample.SampleService",
+            "methods": [
+              {
+                "methodName": "getSomeData",
+                "returnId": "sampleData0",
+                "methodArguments": [
+                  "net.mcfarb.testing.ddmock.sample.SampleArgClass",
+                  "java.lang.String",
+                  "java.lang.Long"
+                ]
+              },
+              {
+                "methodName": "getAListOfLongs",
+                "returnId": "listObject1",
+                "methodArguments": [
+                  "java.util.List"
+                ]
+              },
+              {
+                "methodName": "getAListOfObjects",
+                "returnId": "global.objectRefInOtherFile",
+                "methodArguments": [
+                  "java.lang.Integer"
+                ]
+              }
+            ]
+          }
+        ],
+        "mockObjects": [
+          {
+            "id": "sampleData0",
+            "class" : "net.mcfarb.testing.ddmock.sample.SampleData",
+            "objectValue": {
+              "data1": "Mock Data",
+              "data2": 55,
+              "data3": "07/27/2020, 05:03:17.333"
+            }
+          },
+          {
+            "id": "listObject1",
+            "class": "java.util.List",
+            "genericClass": "java.lang.Long",
+            "objectValue" : [ 1, 2, 3, 5, 8, 13, 1, 2, 3, 5, 8, 13 ]
+          }
+    ]
+}

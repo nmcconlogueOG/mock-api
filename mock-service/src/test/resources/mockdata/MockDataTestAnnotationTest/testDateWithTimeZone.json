@@ -1,0 +1,50 @@
+{
+  "mockServices": [
+  ],
+  "mockObjects": [
+    {
+      "id": "sampleTZData",
+      "class" : "net.mcfarb.testing.ddmock.sample.SampleData",
+      "objectValue": {
+        "data1": "Mock Data",
+        "data2": 55,
+        "data3": "07/27/2020, 05:03:17.333UTC",
+        "data4": "07/27/2020, 05:03:17.333UTC",
+        "data5": "07/27/2020, 05:03:17.333UTC"
+      }
+    },
+    {
+      "id": "sampleNoTZData",
+      "class" : "net.mcfarb.testing.ddmock.sample.SampleData",
+      "objectValue": {
+        "data1": "Mock Data",
+        "data2": 55,
+        "data3": "7/27/2020, 05:03:17.333",
+        "data4": "7/27/2020, 05:03:17.333",
+        "data5": "7/27/2020, 05:03:17.333"
+      }
+    },
+    {
+      "id": "sampleTZData2ParseOnly",
+      "class" : "net.mcfarb.testing.ddmock.sample.SampleData",
+      "objectValue": {
+        "data1": "Mock Data",
+        "data2": 55,
+        "data3": "07/27/2020, 05:03:17.3UTC",
+        "data4": "07/27/2020, 05:03:17.3Z",
+        "data5": "07/27/2020, 05:03:17.3Z"
+      }
+    },
+    {
+      "id": "sampleNoTZData2ParseOnly",
+      "class" : "net.mcfarb.testing.ddmock.sample.SampleData",
+      "objectValue": {
+        "data1": "Mock Data",
+        "data2": 55,
+        "data3": "07/27/2020, 05:03:17.3",
+        "data4": "7/27/2020, 05:03:17.3",
+        "data5":"07/27/2020, 05:03:17.3"
+      }
+    }
+  ]
+}

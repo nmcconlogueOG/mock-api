@@ -1,0 +1,156 @@
+{
+	"mockServices": [
+		{
+			"serviceClass": "net.mcfarb.testing.ddmock.sample.SampleService",
+			"methods": [
+				{
+					"methodName": "getSomeData",
+					"returnId": "object0",
+					"methodArguments": [
+						"net.mcfarb.testing.ddmock.sample.SampleArgClass",
+						"java.lang.String",
+						"java.lang.Long"
+					]
+				},
+				{
+					"methodName": "getSomeOtherDataNoArgs",
+					"returnId": "object1",
+					"methodArguments": null
+				},
+				{
+					"methodName": "getAListOfLongs",
+					"returnId": "object2",
+					"methodArguments": [
+						"java.util.List"
+					]
+				},
+				{
+					"methodName": "getAListOfObjects",
+					"returnId": "object3",
+					"methodArguments": [
+						"java.lang.Integer"
+					]
+				},
+				{
+					"methodName": "getMapOfObjects",
+					"returnId": "object4",
+					"methodArguments": [
+						"java.lang.Integer"
+					]
+				}
+			]
+		}
+	],
+	"mockObjects": [
+		{
+			"id": "object0",
+			"class": "net.mcfarb.testing.ddmock.sample.SampleData",
+			"objectValue": {
+				"data1": "Mock Data",
+				"data2": 55,
+				"data3": "07/27/2020, 05:03:17"
+			}
+		},
+		{
+			"id": "object1",
+			"class": "java.lang.String",
+			"stringValue": "This is from the mock",
+			"objectValue": null
+		},
+		{
+			"id": "object2",
+			"class": "java.util.List",
+			"genericClass": "java.lang.Long",
+			"objectValue": [
+				1,
+				2,
+				3,
+				5,
+				8,
+				13,
+				1,
+				2,
+				3,
+				5,
+				8,
+				13
+			]
+		},
+		{
+			"id": "object3",
+			"class": "java.util.List",
+			"genericClass": "net.mcfarb.testing.ddmock.sample.SampleData",
+			"objectValue": [
+				{
+					"data1": "data0",
+					"data2": 0,
+					"data3": null
+				},
+				{
+					"data1": "data1",
+					"data2": 1,
+					"data3": null
+				},
+				{
+					"data1": "data2",
+					"data2": 2,
+					"data3": null
+				},
+				{
+					"data1": "data3",
+					"data2": 3,
+					"data3": null
+				},
+				{
+					"data1": "data4",
+					"data2": 4,
+					"data3": null
+				},
+				{
+					"data1": "data5",
+					"data2": 5,
+					"data3": null
+				},
+				{
+					"data1": "data6",
+					"data2": 6,
+					"data3": null
+				}
+			]
+		},
+		{
+			"id": "object4",
+			"class": "java.util.Map",
+			"version": "2.0",
+			"keyClass": "java.lang.Long",
+			"valueClass": "net.mcfarb.testing.ddmock.sample.SampleData",
+			"objectValue": {
+				"101": {
+					"data1": "mapData1",
+					"data2": 1,
+					"data3": null
+				},
+				"102": {
+					"data1": "mapData2",
+					"data2": 2,
+					"data3": null
+				},
+				"103": {
+					"data1": "mapData3",
+					"data2": 3,
+					"data3": null
+				},
+				"104": {
+					"data1": "mapData4",
+					"data2": 4,
+					"data3": null
+				},
+				"105": {
+					"data1": "mapData5",
+					"data2": 5,
+					"data3": null
+				}
+			}
+		}
+	]
+}

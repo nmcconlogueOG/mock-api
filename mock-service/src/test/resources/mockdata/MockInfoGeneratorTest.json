@@ -1,0 +1,62 @@
+{
+  "mockServices" : [ {
+    "serviceClass" : "net.mcfarb.testing.ddmock.sample.SampleService",
+    "methods" : [ {
+      "methodName" : "getSomeData",
+      "methodArguments" : [ "net.mcfarb.testing.ddmock.sample.SampleArgClass", "java.lang.String", "java.lang.Long" ],
+      "returnId" : "sampleData1"
+    }, {
+      "methodName" : "getSomeOtherDataNoArgs",
+      "methodArguments" : null,
+      "returnId" : "sampleData2"
+    }, {
+      "methodName" : "getAListOfLongs",
+      "methodArguments" : [ "java.util.ArrayList" ],
+      "returnId" : "sampleData3"
+    } ],
+    "beanName" : "sampleService"
+  } ],
+  "mockObjects" : [ {
+    "id" : "sampleData1",
+    "genericClass" : null,
+    "stringValue" : null,
+    "class" : "net.mcfarb.testing.ddmock.sample.SampleData",
+    "objectValue" : {
+      "data1" : "data1",
+      "data2" : 23,
+      "data3" : "07/27/2020, 05:03:17",
+      "data4" : null,
+      "data5" : null
+    }
+  }, {
+    "id" : "sampleData2",
+    "genericClass" : null,
+    "stringValue" : "this is from getSomeOtherDataNoArgs",
+    "class" : "java.lang.String",
+    "objectValue" : null
+  }, {
+    "id" : "sampleData3",
+    "genericClass" : "java.lang.Long",
+    "stringValue" : null,
+    "class" : "java.util.List",
+    "objectValue" : [ 1, 2, 3, 5, 8, 13, 1, 2, 3, 5, 8, 13 ]
+  }, {
+    "id" : "sampleData4",
+    "genericClass" : "net.mcfarb.testing.ddmock.sample.SampleData",
+    "stringValue" : null,
+    "class" : "java.util.ArrayList",
+    "objectValue" : [ {
+      "data1" : "data1",
+      "data2" : 23,
+      "data3" : "07/27/2020, 05:03:17",
+      "data4" : null,
+      "data5" : null
+    }, {
+      "data1" : "data1",
+      "data2" : 23,
+      "data3" : "07/27/2020, 05:03:17",
+      "data4" : null,
+      "data5" : null
+    } ]
+  } ]
+}
