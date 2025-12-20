@@ -21,7 +21,7 @@
   "mockObjects": [
     {
       "id": "mockUser",
-      "class": "net.mcfarb.mockapi.model.User",
+      "class": "net.mcfarb.testing.mockapi.model.User",
       "objectValue": {
         "id": 1,
         "name": "Mock User",
@@ -31,7 +31,7 @@
     {
       "id": "mockUserList",
       "class": "java.util.List",
-      "genericClass": "net.mcfarb.mockapi.model.User",
+      "genericClass": "net.mcfarb.testing.mockapi.model.User",
       "objectValue": [
         {
           "id": 1,

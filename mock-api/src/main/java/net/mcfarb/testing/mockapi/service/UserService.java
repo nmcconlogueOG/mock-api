@@ -1,7 +1,8 @@
-package net.mcfarb.mockapi.service;
+package net.mcfarb.testing.mockapi.service;
 
-import net.mcfarb.mockapi.model.User;
 import org.springframework.stereotype.Service;
+
+import net.mcfarb.testing.mockapi.model.User;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

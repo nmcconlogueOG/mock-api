@@ -1,4 +1,4 @@
-package net.mcfarb.mockapi.model;
+package net.mcfarb.testing.mockapi.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

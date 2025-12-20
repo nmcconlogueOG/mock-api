@@ -1,0 +1,1578 @@
+{
+  "mockRestApis": [
+    {
+      "basePath": "/api/v2/tracker",
+      "methods": [
+        {
+          "path": "/{id}",
+          "httpMethod": "GET",
+          "returnId": "singleTracker",
+          "statusCode": 200
+        },
+        {
+          "path": "",
+          "httpMethod": "GET",
+          "returnId": "trackerList",
+          "statusCode": 200
+        },
+        {
+            "path": "/target/1906",
+            "httpMethod": "GET",
+            "returnId": "trackerTarget1906",
+            "statusCode": 200
+        },
+        {
+            "path": "/target/{id}",
+            "httpMethod": "GET",
+            "returnId": "trackerTarget",
+            "statusCode": 200
+        }
+       ]
+    }
+  ],
+  "mockObjects": [
+    {
+        "id": "trackerList",
+        "class": "java.util.List",
+        "genericClass": "java.util.Map",
+        "objectValue": [
+            {
+                "trackerId": 1000,
+                "name": "FY 2018 AFG Awards Tracker II",
+                "fundingOpportunityId": 1005,
+                "targets": [
+                    {
+                        "id": 1000,
+                        "targetName": "Nonaffiliated EMS Organizations",
+                        "minTarget": null,
+                        "maxTarget": 7000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1001,
+                        "targetName": "State Fire Training Academy",
+                        "minTarget": null,
+                        "maxTarget": 10500000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1002,
+                        "targetName": "Vehicles",
+                        "minTarget": null,
+                        "maxTarget": 87500000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1003,
+                        "targetName": "Career Departments",
+                        "minTarget": 87500000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1004,
+                        "targetName": "Volunteer Departments",
+                        "minTarget": 87500000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1005,
+                        "targetName": "Combination Departments",
+                        "minTarget": 87500000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1006,
+                        "targetName": "Competitive",
+                        "minTarget": null,
+                        "maxTarget": 35000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1007,
+                        "targetName": "Total",
+                        "minTarget": null,
+                        "maxTarget": 315000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    }
+                ],
+                "attributes": null,
+                "trackSubGrants": false,
+                "rankingDirection": "DESC"
+            },
+            {
+                "trackerId": 1003,
+                "name": "FY 2019 AFG Awards Tracker",
+                "fundingOpportunityId": 1010,
+                "targets": [
+                    {
+                        "id": 1016,
+                        "targetName": "Nonaffiliated EMS Organizations",
+                        "minTarget": null,
+                        "maxTarget": 7000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1017,
+                        "targetName": "State Fire Training Academy",
+                        "minTarget": null,
+                        "maxTarget": 10500000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1018,
+                        "targetName": "Vehicles",
+                        "minTarget": null,
+                        "maxTarget": 87500000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1019,
+                        "targetName": "Career Departments",
+                        "minTarget": 87500000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1020,
+                        "targetName": "Volunteer Departments",
+                        "minTarget": 87500000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1021,
+                        "targetName": "Combination Departments",
+                        "minTarget": 87500000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1022,
+                        "targetName": "Competitive",
+                        "minTarget": null,
+                        "maxTarget": 297500000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1023,
+                        "targetName": "Total",
+                        "minTarget": null,
+                        "maxTarget": 315000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    }
+                ],
+                "attributes": null,
+                "trackSubGrants": false,
+                "rankingDirection": "DESC"
+            },
+            {
+                "trackerId": 1170,
+                "name": "FY 2025 AFG Award Recommendation Tracker",
+                "fundingOpportunityId": 1149,
+                "targets": [
+                    {
+                        "id": 1905,
+                        "targetName": "Nonaffiliated EMS Organizations",
+                        "minTarget": null,
+                        "maxTarget": 6480000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1906,
+                        "targetName": "State Fire Training Academy",
+                        "minTarget": null,
+                        "maxTarget": 9720000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1907,
+                        "targetName": "Vehicles",
+                        "minTarget": null,
+                        "maxTarget": 81000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1908,
+                        "targetName": "Career Departments",
+                        "minTarget": 81000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1909,
+                        "targetName": "Volunteer Departments",
+                        "minTarget": 81000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1910,
+                        "targetName": "Combination Departments",
+                        "minTarget": 81000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1911,
+                        "targetName": "Competitive 10% (+Career +Vol +Combo)",
+                        "minTarget": null,
+                        "maxTarget": 32400000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1912,
+                        "targetName": "Total",
+                        "minTarget": null,
+                        "maxTarget": 372600000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    }
+                ],
+                "attributes": null,
+                "trackSubGrants": false,
+                "rankingDirection": "DESC"
+            },
+            {
+                "trackerId": 1043,
+                "name": "FY 2023 AFG Award Recommendation Tracker",
+                "fundingOpportunityId": 1061,
+                "targets": [
+                    {
+                        "id": 1220,
+                        "targetName": "Nonaffiliated EMS Organizations",
+                        "minTarget": null,
+                        "maxTarget": 7200000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1221,
+                        "targetName": "State Fire Training Academy",
+                        "minTarget": null,
+                        "maxTarget": 10800000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1222,
+                        "targetName": "Vehicles",
+                        "minTarget": null,
+                        "maxTarget": 90000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1223,
+                        "targetName": "Career Departments",
+                        "minTarget": 90000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1224,
+                        "targetName": "Volunteer Departments",
+                        "minTarget": 90000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1225,
+                        "targetName": "Combination Departments",
+                        "minTarget": 90000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1226,
+                        "targetName": "Competitive 10% (+Career +Vol +Combo)",
+                        "minTarget": null,
+                        "maxTarget": 306000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1227,
+                        "targetName": "Total",
+                        "minTarget": null,
+                        "maxTarget": 324000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    }
+                ],
+                "attributes": null,
+                "trackSubGrants": false,
+                "rankingDirection": "DESC"
+            },
+            {
+                "trackerId": 1007,
+                "name": "FY 2020 AFG-S 2 Awards Tracker",
+                "fundingOpportunityId": 1015,
+                "targets": [
+                    {
+                        "id": 1040,
+                        "targetName": "Volunteer Departments",
+                        "minTarget": 21998908.67000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1041,
+                        "targetName": "Combination Departments",
+                        "minTarget": 6748433.29000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1042,
+                        "targetName": "Total",
+                        "minTarget": null,
+                        "maxTarget": 32245189.98000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    }
+                ],
+                "attributes": null,
+                "trackSubGrants": false,
+                "rankingDirection": "DESC"
+            },
+            {
+                "trackerId": 1014,
+                "name": "FY 2022 AFG Awards Tracker",
+                "fundingOpportunityId": 1028,
+                "targets": [
+                    {
+                        "id": 1110,
+                        "targetName": "Nonaffiliated EMS Organizations",
+                        "minTarget": null,
+                        "maxTarget": 7200000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1111,
+                        "targetName": "State Fire Training Academy",
+                        "minTarget": null,
+                        "maxTarget": 10800000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1112,
+                        "targetName": "Vehicles",
+                        "minTarget": null,
+                        "maxTarget": 90000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1113,
+                        "targetName": "Career Departments",
+                        "minTarget": 90000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1114,
+                        "targetName": "Volunteer Departments",
+                        "minTarget": 90000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1115,
+                        "targetName": "Combination Departments",
+                        "minTarget": 90000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 119801.26000000,
+                        "recommendedSum": 119801.26000000,
+                        "itemSummaries": [
+                            {
+                                "state": "Pending acceptance",
+                                "sum": 117714.30000000,
+                                "color": "#8EB67D"
+                            },
+                            {
+                                "state": "Front office",
+                                "sum": 2086.96000000,
+                                "color": "#4C2C92"
+                            }
+                        ],
+                        "items": null
+                    },
+                    {
+                        "id": 1116,
+                        "targetName": "Competitive 10% (+Career +Vol +Combo)",
+                        "minTarget": null,
+                        "maxTarget": 306000000.00000000,
+                        "softTarget": null,
+                        "sum": 119801.26000000,
+                        "recommendedSum": 119801.26000000,
+                        "itemSummaries": [
+                            {
+                                "state": "Pending acceptance",
+                                "sum": 117714.30000000,
+                                "color": "#8EB67D"
+                            },
+                            {
+                                "state": "Front office",
+                                "sum": 2086.96000000,
+                                "color": "#4C2C92"
+                            }
+                        ],
+                        "items": null
+                    },
+                    {
+                        "id": 1117,
+                        "targetName": "Total",
+                        "minTarget": null,
+                        "maxTarget": 324000000.00000000,
+                        "softTarget": null,
+                        "sum": 119801.26000000,
+                        "recommendedSum": 119801.26000000,
+                        "itemSummaries": [
+                            {
+                                "state": "Pending acceptance",
+                                "sum": 117714.30000000,
+                                "color": "#8EB67D"
+                            },
+                            {
+                                "state": "Front office",
+                                "sum": 2086.96000000,
+                                "color": "#4C2C92"
+                            }
+                        ],
+                        "items": null
+                    }
+                ],
+                "attributes": null,
+                "trackSubGrants": false,
+                "rankingDirection": "DESC"
+            },
+            {
+                "trackerId": 1068,
+                "name": "FY 2024 AFG Award Recommendation Tracker",
+                "fundingOpportunityId": 1101,
+                "targets": [
+                    {
+                        "id": 1325,
+                        "targetName": "Nonaffiliated EMS Organizations",
+                        "minTarget": null,
+                        "maxTarget": 6480000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1326,
+                        "targetName": "State Fire Training Academy",
+                        "minTarget": null,
+                        "maxTarget": 9720000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1327,
+                        "targetName": "Vehicles",
+                        "minTarget": null,
+                        "maxTarget": 81000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1328,
+                        "targetName": "Career Departments",
+                        "minTarget": 81000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1329,
+                        "targetName": "Volunteer Departments",
+                        "minTarget": 81000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1330,
+                        "targetName": "Combination Departments",
+                        "minTarget": 81000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1331,
+                        "targetName": "Competitive 10% (+Career +Vol +Combo)",
+                        "minTarget": null,
+                        "maxTarget": 32400000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1332,
+                        "targetName": "Total",
+                        "minTarget": null,
+                        "maxTarget": 372600000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    }
+                ],
+                "attributes": null,
+                "trackSubGrants": false,
+                "rankingDirection": "DESC"
+            },
+            {
+                "trackerId": 1008,
+                "name": "FY 2020 AFG Awards Tracker",
+                "fundingOpportunityId": 1018,
+                "targets": [
+                    {
+                        "id": 1043,
+                        "targetName": "Nonaffiliated EMS Organizations",
+                        "minTarget": null,
+                        "maxTarget": 7100000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1044,
+                        "targetName": "State Fire Training Academy",
+                        "minTarget": null,
+                        "maxTarget": 10650000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1045,
+                        "targetName": "Vehicles",
+                        "minTarget": null,
+                        "maxTarget": 88750000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1046,
+                        "targetName": "Career Departments",
+                        "minTarget": 88750000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 10945.45000000,
+                        "recommendedSum": 10945.45000000,
+                        "itemSummaries": [
+                            {
+                                "state": "Grants management office",
+                                "sum": 10945.45000000,
+                                "color": "#981B1E"
+                            }
+                        ],
+                        "items": null
+                    },
+                    {
+                        "id": 1047,
+                        "targetName": "Volunteer Departments",
+                        "minTarget": 88750000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1048,
+                        "targetName": "Combination Departments",
+                        "minTarget": 88750000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1049,
+                        "targetName": "Competitive",
+                        "minTarget": null,
+                        "maxTarget": 301750000.00000000,
+                        "softTarget": null,
+                        "sum": 10945.45000000,
+                        "recommendedSum": 10945.45000000,
+                        "itemSummaries": [
+                            {
+                                "state": "Grants management office",
+                                "sum": 10945.45000000,
+                                "color": "#981B1E"
+                            }
+                        ],
+                        "items": null
+                    },
+                    {
+                        "id": 1100,
+                        "targetName": "Total",
+                        "minTarget": null,
+                        "maxTarget": 319500000.00000000,
+                        "softTarget": null,
+                        "sum": 10945.45000000,
+                        "recommendedSum": 10945.45000000,
+                        "itemSummaries": [
+                            {
+                                "state": "Grants management office",
+                                "sum": 10945.45000000,
+                                "color": "#981B1E"
+                            }
+                        ],
+                        "items": null
+                    }
+                ],
+                "attributes": null,
+                "trackSubGrants": false,
+                "rankingDirection": "DESC"
+            },
+            {
+                "trackerId": 1011,
+                "name": "FY 2021 AFG Awards Tracker",
+                "fundingOpportunityId": 1023,
+                "targets": [
+                    {
+                        "id": 1060,
+                        "targetName": "Nonaffiliated EMS Organizations",
+                        "minTarget": null,
+                        "maxTarget": 9200000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1061,
+                        "targetName": "State Fire Training Academy",
+                        "minTarget": null,
+                        "maxTarget": 13800000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1062,
+                        "targetName": "Vehicles",
+                        "minTarget": null,
+                        "maxTarget": 115000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1063,
+                        "targetName": "Career Departments",
+                        "minTarget": 115000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 119801.26000000,
+                        "recommendedSum": 119801.26000000,
+                        "itemSummaries": [
+                            {
+                                "state": "Pending acceptance",
+                                "sum": 117714.30000000,
+                                "color": "#8EB67D"
+                            },
+                            {
+                                "state": "Front office",
+                                "sum": 2086.96000000,
+                                "color": "#4C2C92"
+                            }
+                        ],
+                        "items": null
+                    },
+                    {
+                        "id": 1064,
+                        "targetName": "Volunteer Departments",
+                        "minTarget": 115000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1065,
+                        "targetName": "Combination Departments",
+                        "minTarget": 115000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1066,
+                        "targetName": "Competitive",
+                        "minTarget": null,
+                        "maxTarget": 391000000.00000000,
+                        "softTarget": null,
+                        "sum": 119801.26000000,
+                        "recommendedSum": 119801.26000000,
+                        "itemSummaries": [
+                            {
+                                "state": "Pending acceptance",
+                                "sum": 117714.30000000,
+                                "color": "#8EB67D"
+                            },
+                            {
+                                "state": "Front office",
+                                "sum": 2086.96000000,
+                                "color": "#4C2C92"
+                            }
+                        ],
+                        "items": null
+                    },
+                    {
+                        "id": 1067,
+                        "targetName": "Total",
+                        "minTarget": null,
+                        "maxTarget": 460000000.00000000,
+                        "softTarget": null,
+                        "sum": 119801.26000000,
+                        "recommendedSum": 119801.26000000,
+                        "itemSummaries": [
+                            {
+                                "state": "Pending acceptance",
+                                "sum": 117714.30000000,
+                                "color": "#8EB67D"
+                            },
+                            {
+                                "state": "Front office",
+                                "sum": 2086.96000000,
+                                "color": "#4C2C92"
+                            }
+                        ],
+                        "items": null
+                    }
+                ],
+                "attributes": null,
+                "trackSubGrants": false,
+                "rankingDirection": "DESC"
+            },
+            {
+                "trackerId": 1004,
+                "name": "FY 2020 AFG-S Awards Tracker",
+                "fundingOpportunityId": 1014,
+                "targets": [
+                    {
+                        "id": 1024,
+                        "targetName": "Nonaffiliated EMS Organizations",
+                        "minTarget": null,
+                        "maxTarget": 2000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1025,
+                        "targetName": "State Fire Training Academy",
+                        "minTarget": null,
+                        "maxTarget": 3000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1026,
+                        "targetName": "Career Departments",
+                        "minTarget": 25000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1027,
+                        "targetName": "Volunteer Departments",
+                        "minTarget": 25000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1028,
+                        "targetName": "Combination Departments",
+                        "minTarget": 25000000.00000000,
+                        "maxTarget": null,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1029,
+                        "targetName": "Competitive",
+                        "minTarget": null,
+                        "maxTarget": 95000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    },
+                    {
+                        "id": 1030,
+                        "targetName": "Total",
+                        "minTarget": null,
+                        "maxTarget": 100000000.00000000,
+                        "softTarget": null,
+                        "sum": 0,
+                        "recommendedSum": 0,
+                        "itemSummaries": [],
+                        "items": null
+                    }
+                ],
+                "attributes": null,
+                "trackSubGrants": false,
+                "rankingDirection": "DESC"
+            }
+        ]
+    },
+    {
+    "id": "singleTracker",
+      "class": "java.util.Map",
+      "version": "2.0",
+      "keyClass": "java.lang.String",
+      "valueClass": "java.lang.Object",
+      "objectValue": {
+        "trackerId": 7187,
+        "name": "FY 2024 AFG Award Recommendation Tracker",
+        "fundingOpportunityId": 1101,
+        "targets": [
+            {
+                "id": 22494,
+                "targetName": "Nonaffiliated EMS Organizations",
+                "minTarget": null,
+                "maxTarget": 6480000.00000000,
+                "softTarget": null,
+                "sum": 3342931.02000000,
+                "recommendedSum": 1669579.21000000,
+                "itemSummaries": [
+                    {
+                        "state": "Accepted",
+                        "sum": 936110.88000000,
+                        "color": "#308116"
+                    },
+                    {
+                        "state": "Pending acceptance",
+                        "sum": 238095.00000000,
+                        "color": "#8EB67D"
+                    },
+                    {
+                        "state": "Congressional notification",
+                        "sum": 118571.33000000,
+                        "color": "#346888"
+                    },
+                    {
+                        "state": "Front office",
+                        "sum": 154220.66000000,
+                        "color": "#4C2C92"
+                    },
+                    {
+                        "state": "Grants management office",
+                        "sum": 222581.34000000,
+                        "color": "#981B1E"
+                    },
+                    {
+                        "state": "Program office",
+                        "sum": 210765.92000000,
+                        "color": "#976802"
+                    },
+                    {
+                        "state": "Paneled",
+                        "sum": 1462585.89000000,
+                        "color": "#74747b"
+                    }
+                ],
+                "items": null
+            },
+            {
+                "id": 22495,
+                "targetName": "State Fire Training Academy",
+                "minTarget": null,
+                "maxTarget": 9720000.00000000,
+                "softTarget": null,
+                "sum": 3342931.02000000,
+                "recommendedSum": 1669579.21000000,
+                "itemSummaries": [
+                    {
+                        "state": "Accepted",
+                        "sum": 936110.88000000,
+                        "color": "#308116"
+                    },
+                    {
+                        "state": "Pending acceptance",
+                        "sum": 238095.00000000,
+                        "color": "#8EB67D"
+                    },
+                    {
+                        "state": "Congressional notification",
+                        "sum": 118571.33000000,
+                        "color": "#346888"
+                    },
+                    {
+                        "state": "Front office",
+                        "sum": 154220.66000000,
+                        "color": "#4C2C92"
+                    },
+                    {
+                        "state": "Grants management office",
+                        "sum": 222581.34000000,
+                        "color": "#981B1E"
+                    },
+                    {
+                        "state": "Program office",
+                        "sum": 210765.92000000,
+                        "color": "#976802"
+                    },
+                    {
+                        "state": "Paneled",
+                        "sum": 1462585.89000000,
+                        "color": "#74747b"
+                    }
+                ],
+                "items": null
+            },
+            {
+                "id": 22496,
+                "targetName": "Vehicles",
+                "minTarget": null,
+                "maxTarget": 81000000.00000000,
+                "softTarget": null,
+                "sum": 3342931.02000000,
+                "recommendedSum": 1669579.21000000,
+                "itemSummaries": [
+                    {
+                        "state": "Accepted",
+                        "sum": 936110.88000000,
+                        "color": "#308116"
+                    },
+                    {
+                        "state": "Pending acceptance",
+                        "sum": 238095.00000000,
+                        "color": "#8EB67D"
+                    },
+                    {
+                        "state": "Congressional notification",
+                        "sum": 118571.33000000,
+                        "color": "#346888"
+                    },
+                    {
+                        "state": "Front office",
+                        "sum": 154220.66000000,
+                        "color": "#4C2C92"
+                    },
+                    {
+                        "state": "Grants management office",
+                        "sum": 222581.34000000,
+                        "color": "#981B1E"
+                    },
+                    {
+                        "state": "Program office",
+                        "sum": 210765.92000000,
+                        "color": "#976802"
+                    },
+                    {
+                        "state": "Paneled",
+                        "sum": 1462585.89000000,
+                        "color": "#74747b"
+                    }
+                ],
+                "items": null
+            },
+            {
+                "id": 22497,
+                "targetName": "Career Departments",
+                "minTarget": 81000000.00000000,
+                "maxTarget": null,
+                "softTarget": null,
+                "sum": 3342931.02000000,
+                "recommendedSum": 1669579.21000000,
+                "itemSummaries": [
+                    {
+                        "state": "Accepted",
+                        "sum": 936110.88000000,
+                        "color": "#308116"
+                    },
+                    {
+                        "state": "Pending acceptance",
+                        "sum": 238095.00000000,
+                        "color": "#8EB67D"
+                    },
+                    {
+                        "state": "Congressional notification",
+                        "sum": 118571.33000000,
+                        "color": "#346888"
+                    },
+                    {
+                        "state": "Front office",
+                        "sum": 154220.66000000,
+                        "color": "#4C2C92"
+                    },
+                    {
+                        "state": "Grants management office",
+                        "sum": 222581.34000000,
+                        "color": "#981B1E"
+                    },
+                    {
+                        "state": "Program office",
+                        "sum": 210765.92000000,
+                        "color": "#976802"
+                    },
+                    {
+                        "state": "Paneled",
+                        "sum": 1462585.89000000,
+                        "color": "#74747b"
+                    }
+                ],
+                "items": null
+            },
+            {
+                "id": 22498,
+                "targetName": "Volunteer Departments",
+                "minTarget": 81000000.00000000,
+                "maxTarget": null,
+                "softTarget": null,
+                "sum": 3342931.02000000,
+                "recommendedSum": 1669579.21000000,
+                "itemSummaries": [
+                    {
+                        "state": "Accepted",
+                        "sum": 936110.88000000,
+                        "color": "#308116"
+                    },
+                    {
+                        "state": "Pending acceptance",
+                        "sum": 238095.00000000,
+                        "color": "#8EB67D"
+                    },
+                    {
+                        "state": "Congressional notification",
+                        "sum": 118571.33000000,
+                        "color": "#346888"
+                    },
+                    {
+                        "state": "Front office",
+                        "sum": 154220.66000000,
+                        "color": "#4C2C92"
+                    },
+                    {
+                        "state": "Grants management office",
+                        "sum": 222581.34000000,
+                        "color": "#981B1E"
+                    },
+                    {
+                        "state": "Program office",
+                        "sum": 210765.92000000,
+                        "color": "#976802"
+                    },
+                    {
+                        "state": "Paneled",
+                        "sum": 1462585.89000000,
+                        "color": "#74747b"
+                    }
+                ],
+                "items": null
+            },
+            {
+                "id": 22499,
+                "targetName": "Combination Departments",
+                "minTarget": 81000000.00000000,
+                "maxTarget": null,
+                "softTarget": null,
+                "sum": 3342931.02000000,
+                "recommendedSum": 1669579.21000000,
+                "itemSummaries": [
+                    {
+                        "state": "Accepted",
+                        "sum": 936110.88000000,
+                        "color": "#308116"
+                    },
+                    {
+                        "state": "Pending acceptance",
+                        "sum": 238095.00000000,
+                        "color": "#8EB67D"
+                    },
+                    {
+                        "state": "Congressional notification",
+                        "sum": 118571.33000000,
+                        "color": "#346888"
+                    },
+                    {
+                        "state": "Front office",
+                        "sum": 154220.66000000,
+                        "color": "#4C2C92"
+                    },
+                    {
+                        "state": "Grants management office",
+                        "sum": 222581.34000000,
+                        "color": "#981B1E"
+                    },
+                    {
+                        "state": "Program office",
+                        "sum": 210765.92000000,
+                        "color": "#976802"
+                    },
+                    {
+                        "state": "Paneled",
+                        "sum": 1462585.89000000,
+                        "color": "#74747b"
+                    }
+                ],
+                "items": null
+            },
+            {
+                "id": 22500,
+                "targetName": "Competitive 10% (+Career +Vol +Combo)",
+                "minTarget": null,
+                "maxTarget": 32400000.00000000,
+                "softTarget": null,
+                "sum": 3342931.02000000,
+                "recommendedSum": 1669579.21000000,
+                "itemSummaries": [
+                    {
+                        "state": "Accepted",
+                        "sum": 936110.88000000,
+                        "color": "#308116"
+                    },
+                    {
+                        "state": "Pending acceptance",
+                        "sum": 238095.00000000,
+                        "color": "#8EB67D"
+                    },
+                    {
+                        "state": "Congressional notification",
+                        "sum": 118571.33000000,
+                        "color": "#346888"
+                    },
+                    {
+                        "state": "Front office",
+                        "sum": 154220.66000000,
+                        "color": "#4C2C92"
+                    },
+                    {
+                        "state": "Grants management office",
+                        "sum": 222581.34000000,
+                        "color": "#981B1E"
+                    },
+                    {
+                        "state": "Program office",
+                        "sum": 210765.92000000,
+                        "color": "#976802"
+                    },
+                    {
+                        "state": "Paneled",
+                        "sum": 1462585.89000000,
+                        "color": "#74747b"
+                    }
+                ],
+                "items": null
+            },
+            {
+                "id": 22501,
+                "targetName": "Total",
+                "minTarget": null,
+                "maxTarget": 372600000.00000000,
+                "softTarget": null,
+                "sum": 3342931.02000000,
+                "recommendedSum": 1669579.21000000,
+                "itemSummaries": [
+                    {
+                        "state": "Accepted",
+                        "sum": 936110.88000000,
+                        "color": "#308116"
+                    },
+                    {
+                        "state": "Pending acceptance",
+                        "sum": 238095.00000000,
+                        "color": "#8EB67D"
+                    },
+                    {
+                        "state": "Congressional notification",
+                        "sum": 118571.33000000,
+                        "color": "#346888"
+                    },
+                    {
+                        "state": "Front office",
+                        "sum": 154220.66000000,
+                        "color": "#4C2C92"
+                    },
+                    {
+                        "state": "Grants management office",
+                        "sum": 222581.34000000,
+                        "color": "#981B1E"
+                    },
+                    {
+                        "state": "Program office",
+                        "sum": 210765.92000000,
+                        "color": "#976802"
+                    },
+                    {
+                        "state": "Paneled",
+                        "sum": 1462585.89000000,
+                        "color": "#74747b"
+                    }
+                ],
+                "items": null
+            }
+        ],
+        "attributes": [
+            {
+                "id": 13771,
+                "attributeName": "organizationKind",
+                "attributeValue": null,
+                "attributePath": "$.application.payload.applicantCharacteristics.organizationKind",
+                "attributeBooleanExpression": null
+            },
+            {
+                "id": 13772,
+                "attributeName": "organizationType",
+                "attributeValue": null,
+                "attributePath": "$.application.payload.applicantCharacteristics.type",
+                "attributeBooleanExpression": null
+            },
+            {
+                "id": 13773,
+                "attributeName": "vehicles",
+                "attributeValue": null,
+                "attributePath": null,
+                "attributeBooleanExpression": "$..fundingStreams.*[?(@.fundingStreamType == 'vehicleAcquisition')]"
+            },
+            {
+                "id": 13774,
+                "attributeName": "fedShare",
+                "attributeValue": null,
+                "attributePath": "$.awardRecommendation.payload.budget.share.fedShare",
+                "attributeBooleanExpression": null
+            },
+            {
+                "id": 13775,
+                "attributeName": "overallScore",
+                "attributeValue": null,
+                "attributePath": "$.panelReviewEntityScoresForGrant.score",
+                "attributeBooleanExpression": null
+            }
+        ],
+        "trackSubGrants": false,
+        "rankingDirection": "DESC"
+        }
+    },
+    {
+        "id": "trackerTarget1906",
+        "class": "java.util.Map",
+        "version":"2.0",
+        "keyClass":"java.lang.String",
+        "valueClass":"java.lang.Object",
+        "objectValue": {
+            "id": 1906,
+            "targetName": "State Fire Training Academy",
+            "minTarget": null,
+            "maxTarget": 9720000.00000000,
+            "softTarget": null,
+            "sum": 3342931.02000000,
+            "recommendedSum": 1669579.21000000,
+            "itemSummaries": [
+                {
+                    "state": "Accepted",
+                    "sum": 936110.88000000,
+                    "color": "#308116"
+                },
+                {
+                    "state": "Pending acceptance",
+                    "sum": 238095.00000000,
+                    "color": "#8EB67D"
+                },
+                {
+                    "state": "Congressional notification",
+                    "sum": 118571.33000000,
+                    "color": "#346888"
+                },
+                {
+                    "state": "Front office",
+                    "sum": 154220.66000000,
+                    "color": "#4C2C92"
+                },
+                {
+                    "state": "Grants management office",
+                    "sum": 222581.34000000,
+                    "color": "#981B1E"
+                },
+                {
+                    "state": "Program office",
+                    "sum": 210765.92000000,
+                    "color": "#976802"
+                },
+                {
+                    "state": "Paneled",
+                    "sum": 1462585.89000000,
+                    "color": "#74747b"
+                }
+            ],
+            "items": null
+        }
+    },
+    {
+        "id": "trackerTarget",
+        "class": "java.util.Map",
+        "version":"2.0",
+        "keyClass":"java.lang.String",
+        "valueClass":"java.lang.Object",
+        "objectValue": {
+            "id": 1905,
+            "targetName": "Nonaffiliated EMS Organizations",
+            "minTarget": null,
+            "maxTarget": 9720000.00000000,
+            "softTarget": null,
+            "sum": 3342931.02000000,
+            "recommendedSum": 1669579.21000000,
+            "itemSummaries": [
+                {
+                    "state": "Accepted",
+                    "sum": 936110.88000000,
+                    "color": "#308116"
+                },
+                {
+                    "state": "Pending acceptance",
+                    "sum": 238095.00000000,
+                    "color": "#8EB67D"
+                },
+                {
+                    "state": "Congressional notification",
+                    "sum": 118571.33000000,
+                    "color": "#346888"
+                },
+                {
+                    "state": "Front office",
+                    "sum": 154220.66000000,
+                    "color": "#4C2C92"
+                },
+                {
+                    "state": "Grants management office",
+                    "sum": 222581.34000000,
+                    "color": "#981B1E"
+                },
+                {
+                    "state": "Program office",
+                    "sum": 210765.92000000,
+                    "color": "#976802"
+                },
+                {
+                    "state": "Paneled",
+                    "sum": 1462585.89000000,
+                    "color": "#74747b"
+                }
+            ],
+            "items": null
+        }
+    }
+
+  ]
+}

@@ -1,10 +1,10 @@
-package net.mcfarb.mockapi;
+package net.mcfarb.testing.mockapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
-import net.mcfarb.mockapi.config.MockApiConfiguration;
+import net.mcfarb.testing.mockapi.config.MockApiConfiguration;
 
 @SpringBootApplication
 @EnableConfigurationProperties(MockApiConfiguration.class)

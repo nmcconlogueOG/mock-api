@@ -1,6 +1,8 @@
-package net.mcfarb.mockapi.controller;
+package net.mcfarb.testing.mockapi.controller;
 
+import java.net.http.HttpRequest;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -23,11 +25,11 @@ import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
-import net.mcfarb.mockapi.config.MockApiConfiguration;
 import net.mcfarb.testing.ddmock.model.MockRestGeneratorInfo;
 import net.mcfarb.testing.ddmock.model.MockRestMethodInfo;
 import net.mcfarb.testing.ddmock.service.JsonProcessor;
 import net.mcfarb.testing.ddmock.service.MockRestProvider;
+import net.mcfarb.testing.mockapi.config.MockApiConfiguration;
 import reactor.core.publisher.Mono;
 
 /**
@@ -89,6 +91,7 @@ public abstract class BaseRestController {
 		return null; // Use global configuration by default
 	}
 
+
 	/**
 	 * Initializes the MockRestProvider with the controller's specific configuration.
 	 * This is called automatically after the bean is constructed.
@@ -121,6 +124,10 @@ public abstract class BaseRestController {
 
 			log.info("[{}] Initialized successfully with {} mock objects",
 					getBasePath(), mockRestProvider.getObjectMap().size());
+
+			if (isFallbackEnabled() && !getEffectiveFallbackUrl().contains(":")){
+				throw new ParseException(getBasePath()+" falback url must include scheme", 0);
+			}
 
 		} catch (Exception e) {
 			log.error("[{}] Failed to initialize controller", getBasePath(), e);
@@ -260,13 +267,18 @@ public abstract class BaseRestController {
 		String fallbackUrl = getEffectiveFallbackUrl();
 		String targetUrl = fallbackUrl + requestPath;
 
+		String [] urlParts =fallbackUrl.split(":");
+		String scheme = urlParts[0];
+		String host = urlParts[1].substring(2);
+		String port=(urlParts.length>2)? urlParts[2]:null;
+
 		log.info("[{}] Proxying request to fallback: {} {}", getBasePath(), httpMethod, targetUrl);
 
 		// Build WebClient request
 		WebClient.RequestBodySpec requestSpec = webClient
 				.method(org.springframework.http.HttpMethod.valueOf(httpMethod))
 				.uri(uriBuilder -> {
-					uriBuilder.scheme(null).host(null).port(-1).path(targetUrl);
+					uriBuilder.scheme(scheme).host(host).port(port).path(requestPath);
 					if (queryParams != null && !queryParams.isEmpty()) {
 						queryParams.forEach(uriBuilder::queryParam);
 					}

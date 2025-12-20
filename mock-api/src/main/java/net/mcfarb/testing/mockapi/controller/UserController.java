@@ -1,30 +1,30 @@
-package net.mcfarb.mockapi.controller;
+package net.mcfarb.testing.mockapi.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Product REST controller that handles all requests starting with /api/product.
+ * User REST controller that handles all requests starting with /api/user.
  * All endpoint behavior is driven by configuration loaded from JSON files.
  *
  * The configuration is searched to find matching methods based on:
- * - Path pattern (e.g., /api/product/{id})
+ * - Path pattern (e.g., /api/user/{id})
  * - HTTP method (GET, POST, PUT, DELETE, etc.)
  * - Query parameters (optional)
  *
- * See src/main/resources/mockdata/product.json for endpoint configuration.
+ * See src/main/resources/mockdata/user.json for endpoint configuration.
  */
 @RestController
-@RequestMapping("/api/product")
-public class ProductController extends BaseRestController {
+@RequestMapping("/api/user")
+public class UserController extends BaseRestController {
 
 	@Override
 	protected String getBasePath() {
-		return "api/product";
+		return "api/user";
 	}
 
 	@Override
 	protected String getConfigFileName() {
-		return "product";
+		return "user";
 	}
 }

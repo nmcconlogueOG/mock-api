@@ -9,7 +9,7 @@
 		<version>3.5.3</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>net.mcfarb.code</groupId>
+	<groupId>net.mcfarb.testing</groupId>
 	<artifactId>mock-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mock-api</name>

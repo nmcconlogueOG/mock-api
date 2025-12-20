@@ -1,4 +1,4 @@
-package net.mcfarb.mockapi.config;
+package net.mcfarb.testing.mockapi.config;
 
 import java.time.Duration;
 

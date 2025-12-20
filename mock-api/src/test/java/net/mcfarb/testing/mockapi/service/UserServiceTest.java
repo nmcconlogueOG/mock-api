@@ -1,13 +1,14 @@
-package net.mcfarb.mockapi.service;
+package net.mcfarb.testing.mockapi.service;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
-import net.mcfarb.mockapi.model.User;
+
 import net.mcfarb.testing.ddmock.model.MockRestGeneratorInfo;
 import net.mcfarb.testing.ddmock.model.MockRestMethodInfo;
 import net.mcfarb.testing.ddmock.service.JsonProcessor;
 import net.mcfarb.testing.ddmock.service.MockRestProvider;
+import net.mcfarb.testing.mockapi.model.User;
 import net.mcfarb.testing.TestParent;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
